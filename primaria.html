@@ -97,6 +97,23 @@
             </div>
         </nav>
     </header>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+        
+            if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+            } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+            }
+        }
+        </script>
     <!-- HEADER-->
 
 
@@ -104,22 +121,28 @@
     <section id="main">
         <div class="container">
             <div class="row pb-5 pt-5 d-flex align-items-center">
-                <div class="col-12 col-lg-6 text-left align-self-center ">
+                <div class="col-12 col-lg-6 text-left align-self-center mb-4">
                     <div class="text-uppercase">
                         <small>Atrevete a vivir</small>
-                        <h2>Primaria </h2>
+                        <h2>Primaria</h2>
                     </div>
                     <div class="text-justify">
                         <p>En primaria consideramos al alumno como indagador, que  aprende de forma creativa y experimental a través de las 
                         actividades y dinámicas que le permiten construir su propio significado de los conocimientos adquiridos para convertirlos en aprendizajes perdurables.</p>
                         </p>El <strong>modelo bilingüe</strong>, mitad del día en español y mitad del día en inglés, impulsa los principios y valores que ayudan a formar seres humanos 
                         con mentalidad internacional, fortaleciendo la lengua materna y desarrollando la habilidad de comunicación a través del idioma inglés.</p>
-                        <p>La enseñanza de las <strong>TICs</strong> y <strong>Robótica</strong> permite a los alumnos obtener herramientas que fortalecen su aprendizaje a través de la indagación,
-                            favoreciendo la adquisición de conocimientos, habilidades, ingenio y destrezas esenciales para su vida futura.</p>
-                        <p>La formación en las artes contribuye al desarrollo integral, poniendo en práctica habilidades físicas, emocionales y pensamiento creativo. 
-                            Aprendiendo a interpretar y recrear sus emociones en un entorno familiar con sentido estético.</p>
+                        <p>La enseñanza de las <strong>TICs</strong> y <strong>Robótica</strong> <span id="dots">...</span><span id="more">permite a los alumnos obtener herramientas que fortalecen su aprendizaje a través de la indagación,
+                            favoreciendo la adquisición de conocimientos, habilidades, ingenio y destrezas esenciales para su vida futura.
+                        <br>
+                        La formación en las artes contribuye al desarrollo integral, poniendo en práctica habilidades físicas, emocionales y pensamiento creativo. 
+                        Aprendiendo a interpretar y recrear sus emociones en un entorno familiar con sentido estético.
+                        <br>
+                        <br>
+                        <small>Incorporada a la <strong>SEP</strong> (Secretaría de Educación Pública) y contamos con la certificación de <strong>Bachillerato Internacional IB</strong>  en el Programa de la Escuela Primaria (PEP).</small></span> 
+                    </p>
                     </div>
-                    <small><p>Incorporada a la <strong>SEP</strong> (Secretaría de Educación Pública) y contamos con la certificación de <strong>Bachillerato Internacional IB</strong>  en el Programa de la Escuela Primaria (PEP).</p></small>
+                    
+                    <button onclick="myFunction()" id="myBtn" class="btn btn-link font-weight-bold">Leer más</button>
                 </div>
                 <div class="col-12 col-lg-6 m-0 p-0">
                     <img src="images/Primaria.png" class="img-fluid rounded-sm" alt="Responsive image">

@@ -250,3 +250,5 @@ hr{
 .card{
     border: none !important; 
 }
+
+#more {display: none;}
